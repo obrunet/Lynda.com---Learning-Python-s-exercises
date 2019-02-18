@@ -5,6 +5,7 @@ from os import path
 import shutil
 from shutil import make_archive
 
+
 def main():
 
     #duplicate an existing file
@@ -20,6 +21,7 @@ def main():
     #create a TAR archive
     root_dir, tail = path.split(src)
     shutil.make_archive("textfile.archive", "tar", root_dir)
+
 
 if __name__=="__main__":
     main()
